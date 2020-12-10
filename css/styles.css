@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
 }
 
 body {
+    width: 100%;
     margin: 0;
     background-color: rgb(255, 255, 255);
 }
@@ -50,7 +52,7 @@ div.scrollmenu a {
     color: white;
     text-align: center;
     padding: 15px;
-    width: 16.4%;
+    width: 25%;
     text-decoration: none;
 }
 
@@ -64,7 +66,8 @@ div.scrollmenu a:hover {
     /*tamaño de foto*/
     background-attachment: fixed;
     /*fondo fijo*/
-    padding: 10% 20px;
+    padding: 10%;
+    /*10% 20px;*/
     text-align: left;
     color: white;
 }
@@ -73,6 +76,27 @@ div.scrollmenu a:hover {
     font-size: 8vw;
     color: black;
     z-index: 1;
+}
+
+.head h1:hover {
+    animation-name: multicolor-text;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes multicolor-text {
+    0% {
+        color: #ff0000;
+    }
+    25% {
+        color: #4460ff;
+    }
+    50% {
+        color: #4460ff;
+    }
+    100% {
+        color: #ff0000;
+    }
 }
 
 
@@ -110,7 +134,7 @@ div.scrollmenu a:hover {
 .one-column {
     float: left;
     width: 100%;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .one-column h1 {
@@ -129,14 +153,9 @@ div.scrollmenu a:hover {
     height: auto;
 }
 
-.two-column h1 {
-    font-size: 4vw;
-    text-align: center;
-}
-
-.two-column p {
-    padding: 0% 5%;
-    font-size: 2vw;
+.four-column {
+    float: left;
+    width: 25%;
 }
 
 
@@ -144,10 +163,17 @@ div.scrollmenu a:hover {
 
 .pad-text {
     padding-left: 5%;
+    padding-right: 5%;
 }
 
 .ti-servicios {
     text-align: center;
+    font-size: 9vh;
+}
+
+.ti-servicios2 {
+    text-align: center;
+    font-size: 4vh;
 }
 
 .par-servicios {
@@ -208,17 +234,21 @@ div.scrollmenu a:hover {
 /*=========================*/
 
 .pad-bottom {
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+}
+
+.pad-top {
+    padding-top: 5%;
 }
 
 
 /*======Galeria============*/
 
 .galeria {
-    width: 90%;
+    width: 100%;
     margin: auto;
     list-style: none;
-    padding: 20px;
+    padding: 1%;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -243,14 +273,19 @@ div.scrollmenu a:hover {
     text-align: center;
 }
 
+.center2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*=====FOOTER=========*/
 
 #footer {
     background-color: black;
     color: white;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    width: 100%;
+    padding-top: 15px;
 }
 
 #footer p {
@@ -258,9 +293,62 @@ div.scrollmenu a:hover {
     font-size: 20px;
 }
 
+.enlace {
+    display: inline;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    text-decoration: underline;
+    background: none;
+    color: #000088;
+    font-family: arial, sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+}
+
+.enlace:hover {
+    text-decoration: none;
+    color: #0000cc;
+    cursor: pointer;
+}
+
+.link {
+    font-size: 8vw;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.link a {
+    color: #333;
+}
+
+
+/*iconos*/
+
+.red {
+    color: red;
+}
+
+.purp {
+    color: rgb(111, 0, 255);
+}
+
+
+/*reloj*/
+
+#countdown {
+    font-size: 3vw;
+}
+
 @media screen and (max-width:700px) {
     .two-column {
         width: 100%;
+    }
+    .two-column p {
+        font-size: 5vw;
+    }
+    div.scrollmenu a {
+        width: 25%;
     }
 }
 
