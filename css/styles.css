@@ -306,6 +306,41 @@ div.scrollmenu a:hover {
     }
 }
 
+@media screen and (max-device-height:700px) {
+    .two-column {
+        width: 100%;
+        padding: 0;
+    }
+    .one-column {
+        padding: 0%;
+    }
+    .one-column h1 {
+        font-size: 18px;
+    }
+    .one-column h2 {
+        font-size: 14px;
+    }
+    .one-column p {
+        font-size: 12px;
+    }
+    .two-column h1 {
+        font-size: 18px;
+    }
+    .two-column h2 {
+        font-size: 14px;
+    }
+    .two-column p {
+        font-size: 12px;
+        text-align: center;
+    }
+    #countdown {
+        font-size: 20px;
+    }
+     ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
 @media screen and (max-device-width:700px) {
     .two-column {
         width: 100%;
