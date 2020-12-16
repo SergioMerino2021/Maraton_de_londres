@@ -188,6 +188,10 @@ div.scrollmenu a:hover {
     margin-right: auto;
 }
 
+.icon {
+    font-size: 18vh;
+}
+
 .galeria {
     width: 100%;
     margin: auto;
