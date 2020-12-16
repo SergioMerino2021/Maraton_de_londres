@@ -1,39 +1,13 @@
 * {
     box-sizing: border-box;
-    font-family: 'Roboto Mono', monospace;
+    margin: 0px;
 }
 
 body {
-    width: 100%;
     margin: 0;
+    padding: 0;
     background-color: rgb(255, 255, 255);
 }
-
-
-/*
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-
-/* Hide scrollbar for Chrome, Safari and Opera 
-
-.example::-webkit-scrollbar {
-    display: none;
-}
-
-
-/* Hide scrollbar for IE,
-Edge and Firefox 
-
-.example {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}*/
-
-
-/**/
 
 .row:after {
     content: "";
@@ -41,7 +15,7 @@ Edge and Firefox
     clear: both;
 }
 
-div.scrollmenu {
+.scrollmenu {
     background-color: #333;
     overflow: auto;
     white-space: nowrap;
@@ -52,7 +26,7 @@ div.scrollmenu a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 15px;
+    /*padding: 1%;*/
     width: 25%;
     text-decoration: none;
 }
@@ -76,7 +50,6 @@ div.scrollmenu a:hover {
 .head h1 {
     font-size: 8vw;
     color: black;
-    z-index: 1;
 }
 
 .head h1:hover {
@@ -105,7 +78,7 @@ div.scrollmenu a:hover {
 
 .sep-color {
     margin: 0;
-    margin-top: -4px;
+    /*margin-top: -4px;*/
     background-color: rgb(0, 0, 0);
     width: 100%;
     height: 20px;
@@ -135,64 +108,115 @@ div.scrollmenu a:hover {
 .one-column {
     float: left;
     width: 100%;
+    margin: 0px;
     /*padding: 10px;*/
 }
 
 .one-column h1 {
-    font-size: 5vw;
+    font-size: 48px;
     text-align: center;
-    font-weight: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.one-column img {
+    border-radius: 5%;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
 }
 
 .two-column {
+    padding: 2%;
     float: left;
     width: 50%;
+    margin: 0px;
+}
+
+.two-column h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+.two-column p {
+    text-align: left;
+    font-size: 24px;
+    padding-left: 5%;
+}
+
+.one-column h2 {
+    font-size: 32px;
+    text-align: center;
+    /*margin-left: auto;
+    margin-right: auto;*/
 }
 
 .two-column img {
+    border-radius: 15px;
+    padding-top: 5%;
+    /*margin-top: auto;
+    margin-right: auto;*/
     width: 100%;
     height: auto;
 }
 
-.four-column {
-    float: left;
-    width: 25%;
-}
-
-
-/*===============================*/
-
-.pad-text {
-    padding-left: 5%;
-    padding-right: 5%;
-}
-
-.ti-servicios {
-    text-align: center;
-    font-size: 9vh;
-}
-
-.ti-servicios2 {
-    text-align: center;
-    font-size: 4vh;
-}
-
-.par-servicios {
-    color: #333;
-}
-
-
-/*================================*/
-
-.titulo {
-    width: 5vw;
+#countdown {
+    font-size: 36px;
     text-align: center;
 }
 
+.center_img {
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 15px;
+}
 
-/*===Tabla====*/
+.pad-bottom {
+    padding-bottom: 15px;
+}
+
+.pad-top {
+    padding-top: 25px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.galeria {
+    width: 100%;
+    margin: auto;
+    list-style: none;
+    padding: 1%;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.galeria li {
+    margin: 5px;
+}
+
+.galeria img {
+    width: 210px;
+    height: 130px;
+}
+
+.red {
+    color: red;
+}
+
+.purple {
+    color: purple;
+}
 
 #customers {
+    margin-left: auto;
+    margin-right: auto;
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 80%;
@@ -220,68 +244,6 @@ div.scrollmenu a:hover {
     color: white;
 }
 
-
-/*===========IMG===============*/
-
-.imag {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 50%;
-    border-radius: 10px 10px;
-}
-
-
-/*=========================*/
-
-.pad-bottom {
-    padding-bottom: 5%;
-}
-
-.pad-top {
-    padding-top: 5%;
-}
-
-
-/*======Galeria============*/
-
-.galeria {
-    width: 100%;
-    margin: auto;
-    list-style: none;
-    padding: 1%;
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.galeria li {
-    margin: 5px;
-}
-
-.galeria img {
-    width: 210px;
-    height: 130px;
-}
-
-
-/*===========================*/
-
-.center {
-    /*margin-left: auto;
-    margin-right: auto;*/
-    text-align: center;
-}
-
-.center2 {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-/*=====FOOTER=========*/
-
 #footer {
     background-color: black;
     color: white;
@@ -294,77 +256,51 @@ div.scrollmenu a:hover {
     font-size: 20px;
 }
 
-.enlace {
-    display: inline;
-    border: 0;
-    padding: 0;
-    margin: 0;
-    text-decoration: underline;
-    background: none;
-    color: #000088;
-    font-family: arial, sans-serif;
-    font-size: 1em;
-    line-height: 1em;
+.text {
+    width: 100%;
 }
 
-.enlace:hover {
-    text-decoration: none;
-    color: #0000cc;
-    cursor: pointer;
-}
-
-.link {
-    font-size: 8vw;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.link a {
-    color: #333;
+.pad-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 
-/*iconos*/
-
-.red {
-    color: red;
-}
-
-.purp {
-    color: rgb(111, 0, 255);
-}
-
-
-/*reloj*/
-
-#countdown {
-    font-size: 3vw;
-}
+/*===============================*/
 
 @media screen and (max-width:700px) {
     .two-column {
         width: 100%;
+        padding: 0;
+    }
+    p {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 14px;
+    }
+    .one-column {
+        padding: 0%;
+    }
+    .one-column h1 {
+        font-size: 18px;
+    }
+    .one-column h2 {
+        font-size: 14px;
     }
     .two-column p {
-        font-size: 5vw;
+        text-align: center;
     }
-    div.scrollmenu a {
-        width: 25%;
+    #countdown {
+        font-size: 20px;
     }
 }
 
 @media screen and (max-device-width:700px) {
      ::-webkit-scrollbar {
         display: none;
-    }
-    .example::-webkit-scrollbar {
-        display: none;
-    }
-    .example {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-    }
-    div.scrollmenu a {
-        width: 25%;
     }
 }
